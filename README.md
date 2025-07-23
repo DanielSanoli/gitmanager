@@ -60,7 +60,6 @@ A implementação dos seguintes itens será considerada um diferencial:
 ●​ Utilizar o conceito de DB migration do Spring Boot.
 ●​ Realizar a autenticação das APIs via token, utilizando o cabeçalho HTTP​
 Authorization.
-<<<<<<< HEAD
 
 // Para obter o token JWT faça a requisição abaixo:
 
@@ -72,5 +71,3 @@ curl --location 'http://localhost:8080/api/auth/login' \
 }'
 
 Ao possuir o token é só passar no header das requisições 'Authorizarion: Bearer SEU_TOKEN_JWT'
-=======
->>>>>>> 6398679e2be9be78da6e633db1d84dd595ee6691
