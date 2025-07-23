@@ -8,7 +8,11 @@ import br.com.gitmanager.repository.RoleRepository;
 
 @Service
 public class RoleService {
-    private RoleRepository roleRepository;
+    private final RoleRepository roleRepository;
+    
+    public RoleService(RoleRepository roleRepository) {
+        this.roleRepository = roleRepository;
+    }
     
     public RoleDTO createRole(RoleDTO roleDTO) {
         Role role = new Role();

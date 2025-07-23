@@ -13,7 +13,11 @@ import br.com.gitmanager.service.RoleService;
 @RequestMapping("/api/roles")
 public class RoleController {
 
-    private RoleService roleService;
+    private final RoleService roleService;
+    
+    public RoleController(RoleService roleService) {
+        this.roleService = roleService;
+    }
     
     @PostMapping
     public ResponseEntity<RoleDTO> createRole(@RequestBody RoleDTO roleDTO) {
